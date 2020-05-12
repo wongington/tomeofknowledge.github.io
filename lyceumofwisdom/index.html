@@ -1,487 +1,510 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Lyceum of Wisdom Questions and Answers</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
-<div class="jumbotron text-centre">
+<div class="jumbotron text-center" style="margin-bottom: 0">
   <h1>Lyceum of Wisdom</h1>
 </div>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for question" title="Question">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-bottom: 30px">
+  <a class="navbar-brand" href="https://cdn.discordapp.com/attachments/603395506315722762/709651373502758942/unknown.png">Tome of Knowledge</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul>
+  </div> --> 
+</nav>
 
-<table class="table-dark table-hover" id="myTable">
-  <tr class="header">
-    <th style="width:60%;">Question</th>
-    <th style="width:40%;">Answer</th>
-  </tr>
-  <tr>
-    <td>Which commander was considered an enemy of Rome from an early age?</td>
-    <td>Hannical Barca</td>
-  </tr>
-  <tr>
-    <td>Where did the Renaissance begin?</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>What city was the 2000 Olympics held in?</td>
-    <td>Sydney</td>
-  </tr>
-  <tr>
-    <td>Which European wrote the first travelogue detailing China's history, culture, and art?</td>
-    <td>Marco Polo</td>
-  </tr>
-  <tr>
-    <td>Which group conquered the Byzantine Empire?</td>
-    <td>Ottomans</td>
-    <tr>
-      <td>How many fingers does the cartoon character Mickey Mouse have on each hand?</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>How do you get Alliance Technology Credits?</td>
-      <td>By donating to research Alliance Technology</td>
-    </tr>
-    <tr>
-      <td>Which honorary rank was the founder of the Kentucky Fried Chicken (KFC) given?</td>
-      <td>Colonel</td>
-    </tr>
-    <tr>
-      <td>Which of the following commanders was part of the Battle of Red Cliffs?</td>
-      <td>Cao Cao</td>
-    </tr>
-    <tr>
-      <td>Which four-word saying did Oda Nobunaga live by?</td>
-      <td>Rule with absolute force</td>
-    </tr>
-    <tr>
-      <td>Of the 12 Chinese Zodiac animals, which comes first?</td>
-      <td>Rat</td>
-    </tr>
-    <tr>
-      <td>The Three Kingdoms of Korea were Baekje, Silla, and...?</td>
-      <td>Goguryeo</td>
-    </tr>
-    <tr>
-      <td>Which of the following is considered a metallic resource?</td>
-      <td>Iron</td>
-    </tr>
-    <tr>
-      <td>Galileo's Leaning Tower of Pisa experiment overturned a theory of whic Ancient Greek scientist?</td>
-      <td>Aristotle</td>
-    </tr>
-    <tr>
-      <td>Which commander is nicknamed Cathage's Guardian?</td>
-      <td>Hannibal Barca</td>
-    </tr>
-    <tr>
-      <td>Which country started the tradition of the 8-hour work day?</td>
-      <td>United Kingdom</td>
-    </tr>
-    <tr>
-      <td>First created in Ancient Greece, to which profession does the Hippocratic Oath apply?</td>
-      <td>Doctors</td>
-    </tr>
-    <tr>
-      <td>Which of the following is a phase of The Mightiest Governor event?</td>
-      <td>Enemy Elimination</td>
-    </tr>
-    <tr>
-      <td>To whom did India give the title "Mahatma"?</td>
-      <td>Mohandas Karamchand Gandhi</td>
-    </tr>
-    <tr>
-      <td>Which of the following is a nonrenewable energy source (such as coal, oil, or natural gas)?</td>
-      <td>Fossil Fuel</td>
-    </tr>
-    <tr>
-      <td>During the Trojan War, which Greek warrior killed Hector?</td>
-      <td>Achilles</td>
-    </tr>
-    <tr>
-      <td>Which is recognized by the Guinness Book of World Records as having the largest cumulative circulation of any single-author comic?</td>
-      <td>One Piece</td>
-    </tr>
-    <tr>
-      <td>Where do adaptations come from?</td>
-      <td>Both mutations and genetic recombination</td>
-    </tr>
-    <tr>
-      <td>Which commander was known as the Celtic Rose?</td>
-      <td>Boudica</td>
-    </tr>
-    <tr>
-      <td>Which commander is nicknamed Mead of Death?</td>
-      <td>Sarka</td>
-    </tr>
-    <tr>
-      <td>Which of the following musical instruments has six strings?</td>
-      <td>Guitar</td>
-    </tr>
-    <tr>
-      <td>Which unit type is strong against Archers?</td>
-      <td>Cavalry</td>
-    </tr>
-    <tr>
-      <td>Which commander showed their military genius in the Battle of Poitiers in the 8th century AD?</td>
-      <td>Charles Martel</td>
-    </tr>
-    <tr>
-      <td>The Punic Wars were fought by Ancient Rome and what other ancient empire?</td>
-      <td>Ancient Carthage</td>
-    </tr>
-    <tr>
-      <td>Which commander is known as the Conqueror of Chaos?</td>
-      <td>Cao Cao</td>
-    </tr>
-    <tr>
-      <td>Who is the King of the Kingdom?</td>
-      <td>Leader of the Alliance that conquers the Lost Temple</td>
-    </tr>
-    <tr>
-      <td>How many phases are there in The Mightiest Governor event?</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Which of the Babylonian Codes of Law was the first full set of written laws in recorded history?</td>
-      <td>The Code of Hammurabi</td>
-    </tr>
-    <tr>
-      <td>Which part of the brain will alcohol effect?</td>
-      <td>The cerebellum</td>
-    </tr>
-    <tr>
-      <td>Which art group is known as a "national treasure" of Canada?</td>
-      <td>Cirque du Soleil</td>
-    </tr>
-    <tr>
-      <td>What is the champion Keira's nickname?</td>
-      <td>The Red Chameleon</td>
-    </tr>
-    <tr>
-      <td>Who commanded the New Model Army founded by Parliament during the English Civil War?</td>
-      <td>Cromwell</td>
-    </tr>
-    <tr>
-      <td>Which of the following commanders excels at attacking enemy cities?</td>
-      <td>Julius Caesar</td>
-    </tr>
-    <tr>
-      <td>Which civilization was the first to have public toilets?</td>
-      <td>Ancient Rome</td>
-    </tr>
-    <tr>
-      <td>Why do frogs and other oprganism produce so many eggs/offspring?</td>
-      <td>THe more offspring produced the more likely they will survive</td>
-    </tr>
-    <tr>
-      <td>From the 8th to the 11th century CE, what did Europeans frequently call the Scandinavian invaders who frequently ravage their lands?</td>
-      <td>Vikings</td>
-    </tr>
-    <tr>
-      <td>Which Portuguese explorer was the first European to sail to the southerm tip of Africa?</td>
-      <td>Bartomeleu</td>
-    </tr>
-    <tr>
-      <td>Which of these was the only commander to defeat Cyrus the Great in battle?</td>
-      <td>Tomyris</td>
-    </tr>
-    <tr>
-      <td>France and Germany were both once part of what Kingdom?</td>
-      <td>Francia</td>
-    </tr>
-    <tr>
-      <td>Which city-state of Ancient Greece was known for its brutal military training and bravery?</td>
-      <td>Sparta</td>
-    </tr>
-    <tr>
-      <td>Which of the following is an inexhaustible energy resource that relies on hot magma or hot, dry rocks below ground?</td>
-      <td>Geothermal energy</td>
-    </tr>
-    <tr>
-      <td>Which of the following is not a characteristic of Renaissance art?</td>
-      <td>Flat/two dimentional</td>
-    </tr>
-    <tr>
-      <td>Of the 12 Chinese Zodiac animals, which comes first?</td>
-      <td>Rat</td>
-    </tr>
-    <tr>
-      <td>Which Roman Emperor was named Augustus after ending a civil war?</td>
-      <td>Gaius Octavius</td>
-    </tr>
-    <tr>
-      <td>Which of the following describes a monotheist?</td>
-      <td>Someone who worships 1 god</td>
-    </tr>
-    <tr>
-      <td>In Greek mythology, which hero quested for the Golden Fleece?</td>
-      <td>Jason</td>
-    </tr>
-    <tr>
-      <td>Advantages of Johannes Gutenberg's printing press include all of the following except what?</td>
-      <td>Increase in church power</td>
-    </tr>
-    <tr>
-      <td>Eye glasses are composed of quartz, sand, and what?</td>
-      <td>Petroleum</td>
-    </tr>
-    <tr>
-      <td>Which prominent statesman served as the first general of the Edo shogunate at the end of Japan's Warring States period?</td>
-      <td>Tokugawa Ieyasu</td>
-    </tr>
-    <tr>
-      <td>Which unit type is strong against Cavalry?</td>
-      <td>Infantry</td>
-    </tr>
-    <tr>
-      <td>In Ark of Osiris, which Speedup can you use?</td>
-      <td>Healing</td>
-    </tr>
-    <tr>
-      <td>Which of the following was praised by his countrymen as Ancient Greece's best and most honest democratic representatives</td>
-      <td>Pericles</td>
-    </tr>
-    <tr>
-      <td>Renaissance painters in Flanders, as in Italy, tended to produce what type of artwork?</td>
-      <td>Realistic</td>
-    </tr>
-    <tr>
-      <td>Which part of the human body contains the most water?</td>
-      <td>Eyeballs</td>
-    </tr>
-    <tr>
-      <td>Which of these is used to rally Alliance troops?</td>
-      <td>Castle</td>
-    </tr>
-    <tr>
-      <td>On which continent is the human race gernerally thought to have originated?</td>
-      <td>Africa</td>
-    </tr>
-    <tr>
-      <td>Who founded the Kingdom of Asturias?</td>
-      <td>Pelagius</td>
-    </tr>
-    <tr>
-      <td>Who is considered the "Father of the Modern Olympic Games?"</td>
-      <td>Pierre de Coubertin</td>
-    </tr>
-    <tr>
-      <td>Mutations are a change in what?</td>
-      <td>DNA</td>
-    </tr>
-    <tr>
-      <td>Which type of natural disaster is measured using the Richter scale?</td>
-      <td>Earthquake</td>
-    </tr>
-    <tr>
-      <td>What is the length of a marathon in kilometers?</td>
-      <td>40Km</td>
-    </tr>
-    <tr>
-      <td>Where do adaptations come from?</td>
-      <td>Both mutations and genetic recombination</td>
-    </tr>
-    <tr>
-      <td>In Norse mythology, who wielded te weapon Gungnir?</td>
-      <td>Odin</td>
-    </tr>
-    <tr>
-      <td>Where did Genghis Khan start building his Mongol empire?</td>
-      <td>Asia</td>
-    </tr>
-    <tr>
-      <td>When was the Declaration of Independence written?</td>
-      <td>1776</td>
-    </tr>
-    <tr>
-      <td>The more genetic variation a population has, the more likely it is that some individuals will what?</td>
-      <td>Survive</td>
-    </tr>
-    <tr>
-      <td>Where did King Louis XIV of France move the royal court to in 1862?</td>
-      <td>The Palace of Versailles</td>
-    </tr>
-    <tr>
-      <td>What are Books of Covenent used for?</td>
-      <td>To upgrade the Castle</td>
-    </tr>
-    <tr>
-      <td>What is the name for the phenomenon by which organisms that are adapted to the environment survive to pass traits to their offspring?</td>
-      <td>Natural selection</td>
-    </tr>
-    <tr>
-      <td>The differences among a species, like different bird beaks, are called what?</td>
-      <td>Variations</td>
-    </tr>
-    <tr>
-      <td>Which unit type is strong against Infantry?</td>
-      <td>Archers</td>
-    </tr>
-    <tr>
-      <td>Before leading the biggest slave rebellion of Ancient Rome, what was Spartacus?</td>
-      <td>A gladiator</td>
-    </tr>
-    <tr>
-      <td>Who instituted the Julian Calendar?</td>
-      <td>Julius Caesar</td>
-    </tr>
-    <tr>
-      <td>Egypt's economy was primarily based on what?</td>
-      <td>Agriculture</td>
-    </tr>
-    <tr>
-      <td>Which of the following resources cannoy be found in your jeans?</td>
-      <td>Lead</td>
-    </tr>
-    <tr>
-      <td>What is the name for renewable energy derived from bruning organic materials such as wood and alcohol?</td>
-      <td>Biomass</td>
-    </tr>
-    <tr>
-      <td>Which country was the first to invent perfume?</td>
-      <td>Cyprus</td>
-    </tr>
-    <tr>
-      <td>Which of the following does the green Olympic Ring represent?</td>
-      <td>Oceania</td>
-    </tr>
-    <tr>
-      <td>Which of the following commanders excels at leading infantry?</td>
-      <td>Richard I</td>
-    </tr>
-    <tr>
-      <td>In which country was the air conditioning invented?</td>
-      <td>USA</td>
-    </tr>
-    <tr>
-      <td>Which of the following was NOT invented in China?</td>
-      <td>Seismographs</td>
-    </tr>
-    <tr>
-      <td>Who was the only King of England to be executed?</td>
-      <td>Charles I</td>
-    </tr>
-    <tr>
-      <td>In Greek mythology, what is the relationship between Zeus and Hermes?</td>
-      <td>Father and son</td>
-    </tr>
-    <tr>
-      <td>Which artist designed St. Peter's Basilica in the Vatican?</td>
-      <td>Michelangelo</td>
-    </tr>
-    <tr>
-      <td>Which planet in our solar system rotates the fastest?</td>
-      <td>Jupiter</td>
-    </tr>
-    <tr>
-      <td>Which commander is known as Barbarossa?</td>
-      <td>Frederick I</td>
-    </tr>
-    <tr>
-      <td>Which of the following terms refers to the act of limiting usage of a natural resource to help protect it?</td>
-      <td>Conservation</td>
-    </tr>
-    <tr>
-      <td>Who was the first Emperor of Rome?</td>
-      <td>Gaius Octavius Augustus</td>
-    </tr>
-    <tr>
-      <td>What is the name of the revolution in 1688 which established the British constitutional monarchy?</td>
-      <td>The Glorious Revolution</td>
-    </tr>
-    <tr>
-      <td>Who owned everything in Ancient Egyptian kingdoms?</td>
-      <td>The Pharaoh</td>
-    </tr>
-    <tr>
-      <td>Homer's epic "The Iliad" focuses on event happening during which war or battle?</td>
-      <td>The Trojan War</td>
-    </tr>
-    <tr>
-      <td>Which was the only ancient civilization to develop in a tropical jungle rather than a river basin?</td>
-      <td>The Incas</td>
-    </tr>
-    <tr>
-      <td>Which commander is nicknamed the Father of Conquest?</td>
-      <td>Baybars</td>
-    </tr>
-    <tr>
-      <td>Santa Claus travels on a sleigh pulled by what animal?</td>
-      <td>Reindeer</td>
-    </tr>
-    <tr>
-      <td>Movable type was first used in which country?</td>
-      <td>China</td>
-    </tr>
-    <tr>
-      <td>Where did the soldiers of Ancient Rome get their weapons and armour?</td>
-      <td>Themselves</td>
-    </tr>
-    <tr>
-      <td>In Russian history, what nickname was the first Tzar given for their tyranny?</td>
-      <td>Ivan the Terrible</td>
-    </tr>
-    <tr>
-      <td>Why are advantageous traits more likely to be passed onto offspring?</td>
-      <td>Because they are more likely to survive and reproduce</td>
-    </tr>
-    <tr>
-      <td>Which of these is not a phase of THe Mightiest Governor event?</td>
-      <td>Resource Collection</td>
-    </tr>
-    <tr>
-      <td>Which commander is known as the Lady of the Mercians?</td>
-      <td>Aethelflaed</td>
-    </tr>
-    <tr>
-      <td>Ashoka the Great was the King of which Ancient Indian kingdom?</td>
-      <td>Maurya</td>
-    </tr>
-    <tr>
-      <td>Which of the following in NOT part of Mexico's flag?</td>
-      <td>Camel</td>
-    </tr>
-    <tr>
-      <td>Who came up with the Trojan Horse idea? Who won the Trojan War?</td>
-      <td>Odysseus; The Greeks</td>
-    </tr>
-    <tr>
-      <td>After its foundation in the 6th century BCE, which institution of the Roman Republic served as a consultative parliament?</td>
-      <td>The Senate</td>
-    </tr>
-    <tr>
-      <td>Which of the followwing commanders excels at leading archers?</td>
-      <td>Yi Seong-Gye</td>
-    </tr>
-    <tr>
-      <td>Who wrote the Art of War?</td>
-      <td>Sun Tzu</td>
-    </tr>
-    <tr>
-      <td>Mutations are important because they bring about what?</td>
-      <td>Genetic variation</td>
-    </tr>
-    <tr>
-      <td>The two capitals of Austria-Hungary were Budapest and which other city?</td>
-      <td>Vienna</td>
-    </tr>
-    <tr>
-      <td>Who painted "The Last Supper"?</td>
-      <td>Leonardo da Vinci</td>
-    </tr>
-    <tr>
-      <td>In Greek mythology, to whom did Paris, the Prince of Troy, give a golden apple inscribed with, "To the most beautiful goddess"?</td>
-      <td>Aphrodite</td>
-    </tr>
-    <tr>
-      <td>How did Saladin change the Middle East?</td>
-      <td>He re-conquered most of Palestine</td>
-    </tr>
-  </tr>
-</table>
+<div class="container-fluid">
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for question" title="Question" style="margin-bottom: 10px">
+  <table class="table table-dark table-striped table-hover" id="myTable">
+    <tr class="header">
+      <th style="width:60%;">Question</th>
+      <th style="width:40%;">Answer</th>
+    </tr>
+    <tr>
+      <td>Which commander was considered an enemy of Rome from an early age?</td>
+      <td>Hannical Barca</td>
+    </tr>
+    <tr>
+      <td>Where did the Renaissance begin?</td>
+      <td>Italy</td>
+    </tr>
+    <tr>
+      <td>What city was the 2000 Olympics held in?</td>
+      <td>Sydney</td>
+    </tr>
+    <tr>
+      <td>Which European wrote the first travelogue detailing China's history, culture, and art?</td>
+      <td>Marco Polo</td>
+    </tr>
+    <tr>
+      <td>Which group conquered the Byzantine Empire?</td>
+      <td>Ottomans</td>
+      <tr>
+        <td>How many fingers does the cartoon character Mickey Mouse have on each hand?</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>How do you get Alliance Technology Credits?</td>
+        <td>By donating to research Alliance Technology</td>
+      </tr>
+      <tr>
+        <td>Which honorary rank was the founder of the Kentucky Fried Chicken (KFC) given?</td>
+        <td>Colonel</td>
+      </tr>
+      <tr>
+        <td>Which of the following commanders was part of the Battle of Red Cliffs?</td>
+        <td>Cao Cao</td>
+      </tr>
+      <tr>
+        <td>Which four-word saying did Oda Nobunaga live by?</td>
+        <td>Rule with absolute force</td>
+      </tr>
+      <tr>
+        <td>Of the 12 Chinese Zodiac animals, which comes first?</td>
+        <td>Rat</td>
+      </tr>
+      <tr>
+        <td>The Three Kingdoms of Korea were Baekje, Silla, and...?</td>
+        <td>Goguryeo</td>
+      </tr>
+      <tr>
+        <td>Which of the following is considered a metallic resource?</td>
+        <td>Iron</td>
+      </tr>
+      <tr>
+        <td>Galileo's Leaning Tower of Pisa experiment overturned a theory of whic Ancient Greek scientist?</td>
+        <td>Aristotle</td>
+      </tr>
+      <tr>
+        <td>Which commander is nicknamed Cathage's Guardian?</td>
+        <td>Hannibal Barca</td>
+      </tr>
+      <tr>
+        <td>Which country started the tradition of the 8-hour work day?</td>
+        <td>United Kingdom</td>
+      </tr>
+      <tr>
+        <td>First created in Ancient Greece, to which profession does the Hippocratic Oath apply?</td>
+        <td>Doctors</td>
+      </tr>
+      <tr>
+        <td>Which of the following is a phase of The Mightiest Governor event?</td>
+        <td>Enemy Elimination</td>
+      </tr>
+      <tr>
+        <td>To whom did India give the title "Mahatma"?</td>
+        <td>Mohandas Karamchand Gandhi</td>
+      </tr>
+      <tr>
+        <td>Which of the following is a nonrenewable energy source (such as coal, oil, or natural gas)?</td>
+        <td>Fossil Fuel</td>
+      </tr>
+      <tr>
+        <td>During the Trojan War, which Greek warrior killed Hector?</td>
+        <td>Achilles</td>
+      </tr>
+      <tr>
+        <td>Which is recognized by the Guinness Book of World Records as having the largest cumulative circulation of any single-author comic?</td>
+        <td>One Piece</td>
+      </tr>
+      <tr>
+        <td>Where do adaptations come from?</td>
+        <td>Both mutations and genetic recombination</td>
+      </tr>
+      <tr>
+        <td>Which commander was known as the Celtic Rose?</td>
+        <td>Boudica</td>
+      </tr>
+      <tr>
+        <td>Which commander is nicknamed Mead of Death?</td>
+        <td>Sarka</td>
+      </tr>
+      <tr>
+        <td>Which of the following musical instruments has six strings?</td>
+        <td>Guitar</td>
+      </tr>
+      <tr>
+        <td>Which unit type is strong against Archers?</td>
+        <td>Cavalry</td>
+      </tr>
+      <tr>
+        <td>Which commander showed their military genius in the Battle of Poitiers in the 8th century AD?</td>
+        <td>Charles Martel</td>
+      </tr>
+      <tr>
+        <td>The Punic Wars were fought by Ancient Rome and what other ancient empire?</td>
+        <td>Ancient Carthage</td>
+      </tr>
+      <tr>
+        <td>Which commander is known as the Conqueror of Chaos?</td>
+        <td>Cao Cao</td>
+      </tr>
+      <tr>
+        <td>Who is the King of the Kingdom?</td>
+        <td>Leader of the Alliance that conquers the Lost Temple</td>
+      </tr>
+      <tr>
+        <td>How many phases are there in The Mightiest Governor event?</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Which of the Babylonian Codes of Law was the first full set of written laws in recorded history?</td>
+        <td>The Code of Hammurabi</td>
+      </tr>
+      <tr>
+        <td>Which part of the brain will alcohol effect?</td>
+        <td>The cerebellum</td>
+      </tr>
+      <tr>
+        <td>Which art group is known as a "national treasure" of Canada?</td>
+        <td>Cirque du Soleil</td>
+      </tr>
+      <tr>
+        <td>What is the champion Keira's nickname?</td>
+        <td>The Red Chameleon</td>
+      </tr>
+      <tr>
+        <td>Who commanded the New Model Army founded by Parliament during the English Civil War?</td>
+        <td>Cromwell</td>
+      </tr>
+      <tr>
+        <td>Which of the following commanders excels at attacking enemy cities?</td>
+        <td>Julius Caesar</td>
+      </tr>
+      <tr>
+        <td>Which civilization was the first to have public toilets?</td>
+        <td>Ancient Rome</td>
+      </tr>
+      <tr>
+        <td>Why do frogs and other oprganism produce so many eggs/offspring?</td>
+        <td>THe more offspring produced the more likely they will survive</td>
+      </tr>
+      <tr>
+        <td>From the 8th to the 11th century CE, what did Europeans frequently call the Scandinavian invaders who frequently ravage their lands?</td>
+        <td>Vikings</td>
+      </tr>
+      <tr>
+        <td>Which Portuguese explorer was the first European to sail to the southerm tip of Africa?</td>
+        <td>Bartomeleu</td>
+      </tr>
+      <tr>
+        <td>Which of these was the only commander to defeat Cyrus the Great in battle?</td>
+        <td>Tomyris</td>
+      </tr>
+      <tr>
+        <td>France and Germany were both once part of what Kingdom?</td>
+        <td>Francia</td>
+      </tr>
+      <tr>
+        <td>Which city-state of Ancient Greece was known for its brutal military training and bravery?</td>
+        <td>Sparta</td>
+      </tr>
+      <tr>
+        <td>Which of the following is an inexhaustible energy resource that relies on hot magma or hot, dry rocks below ground?</td>
+        <td>Geothermal energy</td>
+      </tr>
+      <tr>
+        <td>Which of the following is not a characteristic of Renaissance art?</td>
+        <td>Flat/two dimentional</td>
+      </tr>
+      <tr>
+        <td>Of the 12 Chinese Zodiac animals, which comes first?</td>
+        <td>Rat</td>
+      </tr>
+      <tr>
+        <td>Which Roman Emperor was named Augustus after ending a civil war?</td>
+        <td>Gaius Octavius</td>
+      </tr>
+      <tr>
+        <td>Which of the following describes a monotheist?</td>
+        <td>Someone who worships 1 god</td>
+      </tr>
+      <tr>
+        <td>In Greek mythology, which hero quested for the Golden Fleece?</td>
+        <td>Jason</td>
+      </tr>
+      <tr>
+        <td>Advantages of Johannes Gutenberg's printing press include all of the following except what?</td>
+        <td>Increase in church power</td>
+      </tr>
+      <tr>
+        <td>Eye glasses are composed of quartz, sand, and what?</td>
+        <td>Petroleum</td>
+      </tr>
+      <tr>
+        <td>Which prominent statesman served as the first general of the Edo shogunate at the end of Japan's Warring States period?</td>
+        <td>Tokugawa Ieyasu</td>
+      </tr>
+      <tr>
+        <td>Which unit type is strong against Cavalry?</td>
+        <td>Infantry</td>
+      </tr>
+      <tr>
+        <td>In Ark of Osiris, which Speedup can you use?</td>
+        <td>Healing</td>
+      </tr>
+      <tr>
+        <td>Which of the following was praised by his countrymen as Ancient Greece's best and most honest democratic representatives</td>
+        <td>Pericles</td>
+      </tr>
+      <tr>
+        <td>Renaissance painters in Flanders, as in Italy, tended to produce what type of artwork?</td>
+        <td>Realistic</td>
+      </tr>
+      <tr>
+        <td>Which part of the human body contains the most water?</td>
+        <td>Eyeballs</td>
+      </tr>
+      <tr>
+        <td>Which of these is used to rally Alliance troops?</td>
+        <td>Castle</td>
+      </tr>
+      <tr>
+        <td>On which continent is the human race gernerally thought to have originated?</td>
+        <td>Africa</td>
+      </tr>
+      <tr>
+        <td>Who founded the Kingdom of Asturias?</td>
+        <td>Pelagius</td>
+      </tr>
+      <tr>
+        <td>Who is considered the "Father of the Modern Olympic Games?"</td>
+        <td>Pierre de Coubertin</td>
+      </tr>
+      <tr>
+        <td>Mutations are a change in what?</td>
+        <td>DNA</td>
+      </tr>
+      <tr>
+        <td>Which type of natural disaster is measured using the Richter scale?</td>
+        <td>Earthquake</td>
+      </tr>
+      <tr>
+        <td>What is the length of a marathon in kilometers?</td>
+        <td>40Km</td>
+      </tr>
+      <tr>
+        <td>Where do adaptations come from?</td>
+        <td>Both mutations and genetic recombination</td>
+      </tr>
+      <tr>
+        <td>In Norse mythology, who wielded te weapon Gungnir?</td>
+        <td>Odin</td>
+      </tr>
+      <tr>
+        <td>Where did Genghis Khan start building his Mongol empire?</td>
+        <td>Asia</td>
+      </tr>
+      <tr>
+        <td>When was the Declaration of Independence written?</td>
+        <td>1776</td>
+      </tr>
+      <tr>
+        <td>The more genetic variation a population has, the more likely it is that some individuals will what?</td>
+        <td>Survive</td>
+      </tr>
+      <tr>
+        <td>Where did King Louis XIV of France move the royal court to in 1862?</td>
+        <td>The Palace of Versailles</td>
+      </tr>
+      <tr>
+        <td>What are Books of Covenent used for?</td>
+        <td>To upgrade the Castle</td>
+      </tr>
+      <tr>
+        <td>What is the name for the phenomenon by which organisms that are adapted to the environment survive to pass traits to their offspring?</td>
+        <td>Natural selection</td>
+      </tr>
+      <tr>
+        <td>The differences among a species, like different bird beaks, are called what?</td>
+        <td>Variations</td>
+      </tr>
+      <tr>
+        <td>Which unit type is strong against Infantry?</td>
+        <td>Archers</td>
+      </tr>
+      <tr>
+        <td>Before leading the biggest slave rebellion of Ancient Rome, what was Spartacus?</td>
+        <td>A gladiator</td>
+      </tr>
+      <tr>
+        <td>Who instituted the Julian Calendar?</td>
+        <td>Julius Caesar</td>
+      </tr>
+      <tr>
+        <td>Egypt's economy was primarily based on what?</td>
+        <td>Agriculture</td>
+      </tr>
+      <tr>
+        <td>Which of the following resources cannoy be found in your jeans?</td>
+        <td>Lead</td>
+      </tr>
+      <tr>
+        <td>What is the name for renewable energy derived from bruning organic materials such as wood and alcohol?</td>
+        <td>Biomass</td>
+      </tr>
+      <tr>
+        <td>Which country was the first to invent perfume?</td>
+        <td>Cyprus</td>
+      </tr>
+      <tr>
+        <td>Which of the following does the green Olympic Ring represent?</td>
+        <td>Oceania</td>
+      </tr>
+      <tr>
+        <td>Which of the following commanders excels at leading infantry?</td>
+        <td>Richard I</td>
+      </tr>
+      <tr>
+        <td>In which country was the air conditioning invented?</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>Which of the following was NOT invented in China?</td>
+        <td>Seismographs</td>
+      </tr>
+      <tr>
+        <td>Who was the only King of England to be executed?</td>
+        <td>Charles I</td>
+      </tr>
+      <tr>
+        <td>In Greek mythology, what is the relationship between Zeus and Hermes?</td>
+        <td>Father and son</td>
+      </tr>
+      <tr>
+        <td>Which artist designed St. Peter's Basilica in the Vatican?</td>
+        <td>Michelangelo</td>
+      </tr>
+      <tr>
+        <td>Which planet in our solar system rotates the fastest?</td>
+        <td>Jupiter</td>
+      </tr>
+      <tr>
+        <td>Which commander is known as Barbarossa?</td>
+        <td>Frederick I</td>
+      </tr>
+      <tr>
+        <td>Which of the following terms refers to the act of limiting usage of a natural resource to help protect it?</td>
+        <td>Conservation</td>
+      </tr>
+      <tr>
+        <td>Who was the first Emperor of Rome?</td>
+        <td>Gaius Octavius Augustus</td>
+      </tr>
+      <tr>
+        <td>What is the name of the revolution in 1688 which established the British constitutional monarchy?</td>
+        <td>The Glorious Revolution</td>
+      </tr>
+      <tr>
+        <td>Who owned everything in Ancient Egyptian kingdoms?</td>
+        <td>The Pharaoh</td>
+      </tr>
+      <tr>
+        <td>Homer's epic "The Iliad" focuses on event happening during which war or battle?</td>
+        <td>The Trojan War</td>
+      </tr>
+      <tr>
+        <td>Which was the only ancient civilization to develop in a tropical jungle rather than a river basin?</td>
+        <td>The Incas</td>
+      </tr>
+      <tr>
+        <td>Which commander is nicknamed the Father of Conquest?</td>
+        <td>Baybars</td>
+      </tr>
+      <tr>
+        <td>Santa Claus travels on a sleigh pulled by what animal?</td>
+        <td>Reindeer</td>
+      </tr>
+      <tr>
+        <td>Movable type was first used in which country?</td>
+        <td>China</td>
+      </tr>
+      <tr>
+        <td>Where did the soldiers of Ancient Rome get their weapons and armour?</td>
+        <td>Themselves</td>
+      </tr>
+      <tr>
+        <td>In Russian history, what nickname was the first Tzar given for their tyranny?</td>
+        <td>Ivan the Terrible</td>
+      </tr>
+      <tr>
+        <td>Why are advantageous traits more likely to be passed onto offspring?</td>
+        <td>Because they are more likely to survive and reproduce</td>
+      </tr>
+      <tr>
+        <td>Which of these is not a phase of THe Mightiest Governor event?</td>
+        <td>Resource Collection</td>
+      </tr>
+      <tr>
+        <td>Which commander is known as the Lady of the Mercians?</td>
+        <td>Aethelflaed</td>
+      </tr>
+      <tr>
+        <td>Ashoka the Great was the King of which Ancient Indian kingdom?</td>
+        <td>Maurya</td>
+      </tr>
+      <tr>
+        <td>Which of the following in NOT part of Mexico's flag?</td>
+        <td>Camel</td>
+      </tr>
+      <tr>
+        <td>Who came up with the Trojan Horse idea? Who won the Trojan War?</td>
+        <td>Odysseus; The Greeks</td>
+      </tr>
+      <tr>
+        <td>After its foundation in the 6th century BCE, which institution of the Roman Republic served as a consultative parliament?</td>
+        <td>The Senate</td>
+      </tr>
+      <tr>
+        <td>Which of the followwing commanders excels at leading archers?</td>
+        <td>Yi Seong-Gye</td>
+      </tr>
+      <tr>
+        <td>Who wrote the Art of War?</td>
+        <td>Sun Tzu</td>
+      </tr>
+      <tr>
+        <td>Mutations are important because they bring about what?</td>
+        <td>Genetic variation</td>
+      </tr>
+      <tr>
+        <td>The two capitals of Austria-Hungary were Budapest and which other city?</td>
+        <td>Vienna</td>
+      </tr>
+      <tr>
+        <td>Who painted "The Last Supper"?</td>
+        <td>Leonardo da Vinci</td>
+      </tr>
+      <tr>
+        <td>In Greek mythology, to whom did Paris, the Prince of Troy, give a golden apple inscribed with, "To the most beautiful goddess"?</td>
+        <td>Aphrodite</td>
+      </tr>
+      <tr>
+        <td>How did Saladin change the Middle East?</td>
+        <td>He re-conquered most of Palestine</td>
+      </tr>
+    </tr>
+  </table>
+</div>
 
 <script>
 function myFunction() {
